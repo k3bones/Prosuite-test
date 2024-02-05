@@ -101,7 +101,7 @@ body {
 
 .p-title {
   position: relative;
-  top: 9rem;
+  top: 16rem;
 }
 
 .heading-secondary {
@@ -274,31 +274,14 @@ body {
   padding: 4rem 3rem;
 }
 
-.jack {
-  position: absolute;
-  z-index: 0;
-  width: 25rem;
-  left: 200px;
-  top: 2300px;
-}
-
-.maurice {
-  position: absolute;
-  z-index: 0;
-  width: 25rem;
-  right: 200px;
-  top: 2300px;
-}
-
 .pricing-container {
   max-width: 125rem;
   margin: 0 auto;
   height: auto;
   display: flex;
+  padding-bottom: 1rem;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 1rem;
-  gap: 2rem;
   background: center / cover no-repeat url(../img/tech-el.webp),
     linear-gradient(to bottom, #2a2929, rgb(53 51 51 / 100%));
   border-radius: 1.6rem;
@@ -306,9 +289,37 @@ body {
 
 .offers {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
-  padding-top: 11.5rem;
+}
+.add-jack {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: start;
+}
+
+.add-maurice {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: end;
+}
+
+.jack {
+  position: relative;
+  right: 3rem;
+  top: 4rem;
+  z-index: 0;
+  width: 25rem;
+}
+
+.maurice {
+  position: relative;
+  left: 4rem;
+  top: 5rem;
+  z-index: 0;
+  width: 25rem;
 }
 
 .box {
@@ -537,18 +548,10 @@ label {
   }
 
   .jack {
-    position: absolute;
-    z-index: 0;
     width: 25rem;
-    left: 175px;
-    top: 2445px;
   }
   .maurice {
-    position: absolute;
-    z-index: 0;
     width: 25rem;
-    right: 180px;
-    top: 2450px;
   }
 }
 
@@ -750,7 +753,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20rem 1rem;
+    padding: 2rem 1rem;
     gap: 2rem;
     background: center / cover no-repeat url(../img/tech-el.webp),
       linear-gradient(to bottom, #2a2929, rgb(53 51 51 / 100%));
@@ -759,11 +762,41 @@ label {
 
   .p-title {
     position: relative;
-    top: -10rem;
+    top: 10rem;
+  }
+
+  .add-jack {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .add-maurice {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .jack {
+    position: relative;
+    z-index: 0;
+    width: 30rem;
+    left: 5px;
+    top: 50px;
+  }
+
+  .maurice {
+    position: relative;
+    z-index: 0;
+    width: 25rem;
+    left: 4px;
+    top: 50px;
   }
   .offers-mb {
     display: flex;
-    gap: 30rem;
+    gap: 3rem;
     flex-direction: column;
   }
 
@@ -795,22 +828,6 @@ label {
     flex-direction: column;
   }
 
-  .jack {
-    position: absolute;
-    z-index: 0;
-    width: 30rem;
-    left: 30px;
-    top: 3120px;
-  }
-
-  .maurice {
-    position: absolute;
-    z-index: 0;
-    width: 25rem;
-    right: 50px;
-    top: 4600px;
-  }
-
   .ads {
     display: flex;
     gap: 3rem;
@@ -837,7 +854,7 @@ label {
 
   .submit-btn {
     background-color: #915739;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: none;
     height: 6.5rem;
     border-radius: 5px;
